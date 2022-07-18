@@ -10,3 +10,10 @@ close.addEventListener('click', () => {
     menu.classList.remove('active');
 });
 
+const counters = document.querySelectorAll('.progress__bar-counter')
+const lines = document.querySelectorAll('.progress__bar-line span');
+
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+});
+
