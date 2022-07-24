@@ -116,7 +116,17 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/picture.jpg" alt="photo">
+                    <!-- <img srcset="img/picture-min.jpg 300w,
+                                img/picture.jpg 400w"
+                        sizes="(max-width: 576px) 280px,
+                                (min-width: 577px) 400px"
+                     src="img/picture.jpg" alt="photo"> -->
+
+                     <picture>
+                        <source media="(max-width: 576px)" srcset="img/picture-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/picture.jpg">
+                        <img src="img/picture.jpg" alt="photo">
+                     </picture>
                 </div>
                 <div class="about__descr">
                     <h2 class="title title_fz16 about__title">Про меня</h2>
@@ -186,7 +196,7 @@
                                     <div class="resume__item-icon">
                                         <img src="img/icons/experience/university.svg" alt="university">
                                     </div>
-                                    <h4 class="title title_fz14">Название универа</h4>
+                                    <h4 class="title title_fz16">Название универа</h4>
                                     <div class="resume__item-location"> Diploma | stepen' (god)</div>
                                 </div>
                                 <div class="resume__item-body">
@@ -200,7 +210,7 @@
                                     <div class="resume__item-icon">
                                         <img src="img/icons/experience/courses.svg" alt="university">
                                     </div>
-                                    <h4 class="title title_fz14">Udemy</h4>
+                                    <h4 class="title title_fz16">Udemy</h4>
                                     <div class="resume__item-location"> Diploma | stepen' (god)</div>
                                 </div>
                                 <div class="resume__item-body">
@@ -219,7 +229,7 @@
                                     <div class="resume__item-icon">
                                         <img src="img/icons/experience/developer.svg" alt="university">
                                     </div>
-                                    <h4 class="title title_fz14">Front-End Developer</h4>
+                                    <h4 class="title title_fz16">Front-End Developer</h4>
                                     <div class="resume__item-location"> Diploma | stepen' (god)</div>
                                 </div>
                                 <div class="resume__item-body">
@@ -233,7 +243,7 @@
                                     <div class="resume__item-icon">
                                         <img src="img/icons/experience/designer.svg" alt="university">
                                     </div>
-                                    <h4 class="title title_fz14">UI/UX Designer</h4>
+                                    <h4 class="title title_fz16">UI/UX Designer</h4>
                                     <div class="resume__item-location"> Diploma | stepen' (god)</div>
                                 </div>
                                 <div class="resume__item-body">
@@ -296,42 +306,42 @@
     <section class="progress">
         <div class="container">
             <div class="progress__wrapper">
-                <div class="progress-item">
+                <div class="progress__item">
                     <h2 class="progress__title title title_fz14">Создание сайтов</h2>
                     <div class="progress__bar-counter">100%</div>
                     <div class="progress__bar-line">
                         <span></span>
                     </div>
                 </div>
-                <div class="progress-item">
+                <div class="progress__item">
                     <h2 class="progress__title title title_fz14">Создание приложений</h2>
                     <div class="progress__bar-counter">85%</div>
                     <div class="progress__bar-line">
                         <span></span>
                     </div>
                 </div>
-                <div class="progress-item">
+                <div class="progress__item">
                     <h2 class="progress__title title title_fz14">Работа с данными</h2>
                     <div class="progress__bar-counter">90%</div>
                     <div class="progress__bar-line">
                         <span></span>
                     </div>
                 </div>
-                <div class="progress-item">
+                <div class="progress__item">
                     <h2 class="progress__title title title_fz14">Креативность</h2>
                     <div class="progress__bar-counter">75%</div>
                     <div class="progress__bar-line">
                         <span></span>
                     </div>
                 </div>
-                <div class="progress-item">
+                <div class="progress__item">
                     <h2 class="progress__title title title_fz14">Создание дизайна</h2>
                     <div class="progress__bar-counter">95%</div>
                     <div class="progress__bar-line">
                         <span></span>
                     </div>
                 </div>
-                <div class="progress-item">
+                <div class="progress__item">
                     <h2 class="progress__title title title_fz14">Soft skills</h2>
                     <div class="progress__bar-counter">95%</div>
                     <div class="progress__bar-line">
@@ -342,7 +352,7 @@
         </div>
     </section>
 
-    <section class="works">
+    <!-- <section class="works">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Портфолио</h2>
             <div class="title title_fz36 title__section-subtitle">Мои работы</div>
@@ -369,9 +379,9 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="prices">
+    <!-- <section class="prices">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
             <div class="divider"></div>
@@ -409,9 +419,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="contacts">
+    <!-- <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -464,7 +474,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <script src="js/script.js"></script>
 </body>
