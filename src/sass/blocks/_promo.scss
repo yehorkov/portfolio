@@ -1,0 +1,33 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: url(../img/nebo.jpg) no-repeat center/cover;
+    padding-top: 205px;
+    &__title {
+        color: #f2f3f4;
+        width: 535px;
+        margin-top: 10px;
+    }
+    &__subtitle {
+        color: #f2f3f4;
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
+    &__btns {
+        margin-top: 25px;
+        display: flex;
+        width: 250px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link {
+        color: #f2f3f4;
+        font-weight: bold;
+        &:hover {
+            color: #f2f3f4;
+            text-decoration: underline;
+        }
+    }
+}
